@@ -1,5 +1,6 @@
 import Footer from "@/app/_components/footer";
 import { CMS_NAME, HOME_OG_IMAGE_URL } from "@/lib/constants";
+import { NoFOUCScript, STORAGE_KEY } from "@/lib/theme-script";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import cn from "classnames";
@@ -23,8 +24,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(${NoFOUCScript.toString()})('${STORAGE_KEY}')`,
+          }}
+        />
         <link
           rel="apple-touch-icon"
           sizes="180x180"
