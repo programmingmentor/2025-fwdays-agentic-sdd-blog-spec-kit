@@ -1,0 +1,29 @@
+# blog-starter-app-spec-kit Development Guidelines
+
+Auto-generated from all feature plans. Last updated: 2025-11-15
+
+## Active Technologies
+
+- TypeScript 5.5.2 (strict mode) + Next.js 15.0.2 → 16.x, React 19.0.0-rc → 19.2 (stable), React DOM 19.0.0-rc → 19.2 (stable) (001-upgrade-nextjs)
+
+## Project Structure
+
+```text
+src/
+tests/
+```
+
+## Commands
+
+npm test && npm run lint
+
+## Code Style
+
+TypeScript 5.5.2 (strict mode): Follow standard conventions
+
+## Recent Changes
+
+- 001-upgrade-nextjs: Added TypeScript 5.5.2 (strict mode) + Next.js 15.0.2 → 16.x, React 19.0.0-rc → 19.2 (stable), React DOM 19.0.0-rc → 19.2 (stable)
+
+<!-- MANUAL ADDITIONS START -->
+<!-- MANUAL ADDITIONS END -->
