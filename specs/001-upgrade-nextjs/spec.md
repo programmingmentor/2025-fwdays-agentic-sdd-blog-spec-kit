@@ -25,22 +25,6 @@ As a developer maintaining the blog application, I need the application to funct
 
 ---
 
-### User Story 2 - Application Performance Maintained or Improved (Priority: P2)
-
-As a user of the blog application, I need the application to load and respond at least as quickly as before the upgrade, so that my browsing experience remains smooth and responsive.
-
-**Why this priority**: Upgrades should not degrade performance. Users expect the same or better performance after upgrades.
-
-**Independent Test**: Can be fully tested by measuring page load times, time to interactive, and build times before and after the upgrade, ensuring no significant degradation occurs.
-
-**Acceptance Scenarios**:
-
-1. **Given** the application is upgraded, **When** a user visits any page, **Then** the page loads within acceptable time limits (no more than 20% slower than before)
-2. **Given** the application is upgraded, **When** the application is built, **Then** build time remains reasonable (no more than 30% increase)
-3. **Given** the application is upgraded, **When** users navigate between pages, **Then** navigation feels responsive and smooth
-
----
-
 ### User Story 3 - Development Experience Maintained (Priority: P3)
 
 As a developer working on the blog application, I need the development workflow to remain functional, so that I can continue developing features efficiently.
@@ -78,7 +62,6 @@ As a developer working on the blog application, I need the development workflow 
 - **FR-007**: System MUST ensure development server functionality remains intact
 - **FR-008**: System MUST ensure production build process completes successfully
 - **FR-009**: System MUST handle any breaking changes introduced by the upgrade through appropriate code updates
-- **FR-010**: System MUST maintain or improve application performance metrics
 
 ### Key Entities _(include if feature involves data)_
 
@@ -92,10 +75,9 @@ As a developer working on the blog application, I need the development workflow 
 - **SC-001**: All existing pages load and display correctly without visual regressions or errors (100% of pages functional)
 - **SC-002**: Application builds successfully for production without build errors (build success rate: 100%)
 - **SC-003**: All interactive features (navigation, theme switching) function correctly (100% feature parity)
-- **SC-004**: Page load times remain within acceptable limits (no more than 20% slower than current performance)
-- **SC-005**: Development server starts and runs without errors (100% success rate)
-- **SC-006**: TypeScript compilation completes without type errors (0 type errors)
-- **SC-007**: All blog posts are accessible and display correctly (100% of posts accessible)
+- **SC-004**: Development server starts and runs without errors (100% success rate)
+- **SC-005**: TypeScript compilation completes without type errors (0 type errors)
+- **SC-006**: All blog posts are accessible and display correctly (100% of posts accessible)
 
 ## Assumptions
 
@@ -114,10 +96,16 @@ As a developer working on the blog application, I need the development workflow 
 - All third-party npm dependencies
 - Build and development tooling configuration
 
+## Clarifications
+
+### Session 2025-01-27
+
+- Q: How should performance baseline be measured before upgrade? → A: Performance baseline measurement requirement removed - not considered important for this upgrade
+
 ## Out of Scope
 
 - Adding new features or functionality beyond what is required for the upgrade
 - Changing the application architecture or structure
 - Modifying business logic or user-facing features
-- Performance optimizations beyond maintaining current performance levels
+- Performance measurement and optimization
 - Upgrading other dependencies unless required for Next.js compatibility
