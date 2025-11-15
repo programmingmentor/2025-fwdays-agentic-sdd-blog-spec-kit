@@ -3,6 +3,8 @@
 Auto-generated from all feature plans. Last updated: 2025-11-15
 
 ## Active Technologies
+- TypeScript 5.5+ (strict mode enabled) + Next.js 16+ (App Router), React 19+, Tailwind CSS 3.4+ (001-blog-search)
+- Markdown files in `_posts` directory (read-only, no database) (001-blog-search)
 
 - TypeScript 5.5.2 (strict mode) + Next.js 15.0.2 → 16.x, React 19.0.0-rc → 19.2 (stable), React DOM 19.0.0-rc → 19.2 (stable) (001-upgrade-nextjs)
 
@@ -22,6 +24,7 @@ npm test && npm run lint
 TypeScript 5.5.2 (strict mode): Follow standard conventions
 
 ## Recent Changes
+- 001-blog-search: Added TypeScript 5.5+ (strict mode enabled) + Next.js 16+ (App Router), React 19+, Tailwind CSS 3.4+
 
 - 001-upgrade-nextjs: Added TypeScript 5.5.2 (strict mode) + Next.js 15.0.2 → 16.x, React 19.0.0-rc → 19.2 (stable), React DOM 19.0.0-rc → 19.2 (stable)
 
